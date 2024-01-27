@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/custom-color.js"></script>
+    <link rel="stylesheet" href="styles/image-anim.css">
+    <style>
+    </style>
+</head>
+<body>
+   <div class="main h-screen w-full grid place-items-center grid-cols-2">
+    <div class="center w-[100%] h-[40%] relative">
+        <div class="image-container w-[0%] h-full absolute overflow-hidden">
+            <img class="h-full object-cover rounded" src="images/guide/great wall of china.jpg" alt="">
+        </div>
+        <div class="image-container w-[0%] h-full absolute">
+            <img class="h-full object-cover rounded" src="images/guide/guide1.jpg" alt="">
+        </div>
+        <div class="image-container w-[0%] h-full absolute">
+            <img class="h-full object-cover rounded" src="images/guide/time_square.jpg" alt="">     
+        </div>
+    </div>
+   <!-- circle text -->
+   <div class="circle">
+	<div class="logo"></div>
+	<div class="text">
+		<p>Discover the World through the eyes of expert Guides.</p>
+	</div>
+</div>
+<!-- circle text end -->
+   </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="scripts/gsap.js"></script>
+<script src="scripts/circularText.js"></script>
+</html>

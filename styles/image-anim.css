@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+:root {
+	--radius: 10vmin;
+	--frame-size: calc(var(--radius) / 2);
+	--d-outer: calc(var(--radius) * 2);
+	--d-inner: calc(var(--d-outer) - var(--frame-size));
+	--font-size: calc(var(--radius) / 10);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.center{
+    width: 40%;
+    height: 50%;
+    /* background: yellow; */
+    position: relative;
+}
+.image-container{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+.image-container img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+circle-msg {
+    font-family: Inconsolata, sans-serif;
+	font-size: var(--font-size);
+}
+.circle {
+	position: relative;
+	width: var(--d-outer);
+	height: var(--d-outer);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	position: absolute;
+	width: var(--d-inner);
+	height: var(--d-inner);
+	background: url(../images/tour_guide.jpeg);
+	background-size: cover;
+	border-radius: 50%;
+	filter: contrast(1.5);
+}
+.text-cir {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.text-cir p span {
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 var(--radius);
+}
