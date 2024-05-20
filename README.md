@@ -3,7 +3,7 @@
 This project is a web-based tourist guide landing page developed using HTML, Tailwind CSS, JavaScript, and GSAP. It provides users with a visually appealing introduction to a tourist guide service, showcasing the highlights of various destinations.
 
 ## Live Demo 
-  - https://shubham0202.github.io/tourist_guide/
+  - https://shubham0202.github.io/Tourist-Guide-Landing-Page/
 ## Features
 
 - **Stunning Visuals**: Engage users with high-quality images and videos showcasing popular tourist destinations.
